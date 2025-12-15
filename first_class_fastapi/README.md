@@ -29,31 +29,42 @@ Copy code
 venv\Scripts\activate
 Linux/macOS:
 
+
 bash
 Copy code
 source venv/bin/activate
 Install FastAPI and Uvicorn:
 
+
 bash
 Copy code
 pip install fastapi uvicorn
 📝 Project Structure
-text
-Copy code
+
+
 fastapi_project/
 ├── main.py       ← FastAPI app
+
 ├── README.md
+
 └── venv/         ← Optional virtual environment
+
 ⚡ Endpoints
+
+
+
 Method	Endpoint	Description	Example Response
+
 GET	/	Read a simple message	{"message": "Hello World"}
+
 POST	/	Create a sample item	{"item_id": 1, "name": "Sample Item"}
+
 PUT	/	Update a sample item	{"item_id": 1, "name": "Updated Item"}
+
 DELETE	/	Delete a sample item	{"message": "Item with id 1 has been deleted"}
 
+
 🚀 Run the Application
-bash
-Copy code
 uvicorn main:app --reload
 main → Python file name (main.py)
 
@@ -63,13 +74,10 @@ app → FastAPI instance
 
 Open in browser:
 
-cpp
-Copy code
 http://127.0.0.1:8000
 Interactive docs:
 
-arduino
-Copy code
+
 http://127.0.0.1:8000/docs
 📖 Test Endpoints
 Browser → GET requests only
